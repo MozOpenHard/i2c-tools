@@ -15,10 +15,6 @@ local_cflags := \
 # build libi2c.a
 include $(CLEAR_VARS)
 
-ifneq ($(TARGET_ARCH),x86)
-LOCAL_NDK_VERSION := 5
-LOCAL_SDK_VERSION := 9
-endif
 LOCAL_SRC_FILES += $(libi2c_src_files)
 LOCAL_C_INCLUDES += $(local_c_includes)
 LOCAL_CFLAGS += $(local_cflags)
